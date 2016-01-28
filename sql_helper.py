@@ -17,7 +17,14 @@ def _train_to_mysql(cnx):
     cursor.close()
     return
 
-def _fix_PdDistrict():
+def _locate_neighborhood():
+    import requests
+    '''
+    TODO: fetch neighboorhood from google map
+    r = requests.get()
+    r.json()['results'][0]['address_components'][2]['long_name']
+    '''
+    return
 
 if __name__ == "__main__":
     import mysql.connector
